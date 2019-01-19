@@ -50,17 +50,43 @@ public class Game {
     }
 
     private char randCol() {
-        // TODO implement
+	switch (Math.floor(Math.random()*10)) {
+		case 0:
+			return 'A';
+		case 1:
+			return 'B';
+		case 2:
+			return 'C';
+		case 3:
+			return 'D';
+		case 4:
+			return 'E';
+		case 5:
+			return 'F';
+		case 6:
+			return 'G';
+		case 6:
+			return 'H';
+		case 7:
+			return 'I';
+		case 8:
+			return 'J';
+		case 9:
+			return 'K';
+	}
         return 'X';
     }
-
+	
+	//random row 0-9
     private int randRow() {
-        // TODO implement
-        return 0;
+        return Math.floor(Math.random()*10);
     }
 
     private boolean randVertical() {
-        // TODO implement
+        int flip = Math.floor(math.random()*2;
+	if (flip == 1){
+		return true;
+	}
         return false;
     }
 }
