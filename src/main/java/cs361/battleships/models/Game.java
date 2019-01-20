@@ -51,7 +51,7 @@ public class Game {
 
     private char randCol() {
 	num = Math.floor(Math.random()*10)+65
-        return num.toString();
+        return String.fromCharCode(num);
     }
 	
 	//random row 0-9
