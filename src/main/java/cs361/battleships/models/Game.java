@@ -50,17 +50,20 @@ public class Game {
     }
 
     private char randCol() {
-        // TODO implement
-        return 'X';
+	num = Math.floor(Math.random()*10)+65
+        return String.fromCharCode(num);
     }
-
+	
+	//random row 0-9
     private int randRow() {
-        // TODO implement
-        return 0;
+        return Math.floor(Math.random()*10);
     }
 
     private boolean randVertical() {
-        // TODO implement
+        int flip = Math.floor(math.random()*2;
+	if (flip == 1){
+		return true;
+	}
         return false;
     }
 }
