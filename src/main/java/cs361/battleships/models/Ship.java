@@ -10,15 +10,27 @@ public class Ship {
 	@JsonProperty private List<Square> occupiedSquares;
 
 	public Ship() {
-		occupiedSquares = new ArrayList<>();
+		occupiedSquares = new ArrayList<Square>();
 	}
 	
 	public Ship(String kind) {
-		//TODO implement
+		int size = 0;
+		switch(kind) {
+			case "minesweeper":
+				size = 2;
+				break;
+			case "destroyer":
+				size = 3;
+				break;
+			case "battleship":
+				size = 4;
+				break;
+		}
+		//create array large enough to hold all squares
+		occupiedSquares = new ArrayList<Square>(size);
 	}
 
 	public List<Square> getOccupiedSquares() {
-		//TODO implement
-		return null;
+		return occupiedSquares;
 	}
 }
