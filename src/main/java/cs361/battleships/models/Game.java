@@ -50,20 +50,20 @@ public class Game {
     }
 
     private char randCol() {
-	num = Math.floor(Math.random()*10)+65
-        return String.fromCharCode(num);
+        int num = (int) Math.floor(Math.random()*10)+65;
+        return (char) num;
     }
 	
 	//random row 0-9
     private int randRow() {
-        return Math.floor(Math.random()*10);
+        return (int) Math.floor(Math.random()*10);
     }
 
     private boolean randVertical() {
-        int flip = Math.floor(math.random()*2;
-	if (flip == 1){
-		return true;
+        int flip = (int) Math.floor(Math.random()*2);
+		if (flip == 1){
+			return true;
+		}
+		return false;
 	}
-        return false;
-    }
 }
