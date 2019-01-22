@@ -2,7 +2,7 @@ var isSetup = true;
 var placedShips = 0;
 var game;
 var shipType;
-var vertical;
+var vertical = false;
 
 function makeGrid(table, isPlayer) {
     for (i=0; i<10; i++) {
@@ -127,6 +127,9 @@ function place(size) {
 function initGame() {
     makeGrid(document.getElementById("opponent"), false);
     makeGrid(document.getElementById("player"), true);
+	document.getElementById("is_vertical").addEventListener("click", function(e) {
+		vertical = !vertical;
+	});
     document.getElementById("place_minesweeper").addEventListener("click", function(e) {
         shipType = "MINESWEEPER";
        registerCellListener(place(2));
