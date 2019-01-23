@@ -15,8 +15,14 @@ public class AITest {
 		for (t=0; t<i,t++){
 			assertTrue(Number(randCol()) >= 0);
 		}
-		assertTrue(randRow() < 10);
-		assertTrue(randRow() >= 0);
-		assertTrue(randVertical());
+		i=150;
+		for (t=0; t<i; t++){
+			assertTrue(randRow() < 10);
+			assertTrue(randRow() >= 0);
+		}
+		i=10;
+		for (t=0; t<=i; t++){
+			assertTrue(randVertical());
+		}
 	}
 }
