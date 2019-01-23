@@ -18,5 +18,12 @@ public class BoardTest {
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 0, 'D', false));
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 11, 'D', false));
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 11, 'I', true));
+        
+        assertTrue(board.attack(1, 'A'));
+        assertTrue(board.attack(3, 'C'));
+        assertTrue(board.attack(7, 'I'));
+
+        assertFalse(board.attack(6, 'A'));
+        assertFalse(board.attack(7, 'A'));
     }
 }
