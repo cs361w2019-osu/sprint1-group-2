@@ -8,11 +8,21 @@ public class AITest {
 
 	@Test
 	public void testAI() {
-		assertTrue(Number(randCol()) < 10);
-		assertTrue(Number(randCol()) >= 0);
-
-		assertTrue(randRow() < 10);
-		assertTrue(randRow() >= 0);
-		assertTrue(randVertical());
+		int i=100, t;
+		for (t=0;t<i,t++){
+			assertTrue(Number(randCol()) < 10);
+		}
+		for (t=0; t<i,t++){
+			assertTrue(Number(randCol()) >= 0);
+		}
+		i=150;
+		for (t=0; t<i; t++){
+			assertTrue(randRow() < 10);
+			assertTrue(randRow() >= 0);
+		}
+		i=10;
+		for (t=0; t<=i; t++){
+			assertTrue(randVertical());
+		}
 	}
 }
