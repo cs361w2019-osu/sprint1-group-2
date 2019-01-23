@@ -19,6 +19,8 @@ public class BoardTest {
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 11, 'D', false));
         assertFalse(board.placeShip(new Ship("MINESWEEPER"), 11, 'I', true));
         
-        assertEquals('HIT', board.attack(1, 'A').getResult());
+        assertEquals(HIT, board.attack(1, 'A').getResult());
+        assertEquals(MISS, board.attack(10, 'J').getResult());
+        assertEquals(INVALID, board.attack(1, 'A').getResult());
     }
 }
