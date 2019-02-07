@@ -16,6 +16,31 @@ function makeGrid(table, isPlayer) {
     }
 }
 
+
+var grid = document.getElementById('show');
+
+//modal.style.display = 'block';
+
+
+var x = document.getElementById("show_opponent");
+
+
+
+x.addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+    grid.style.display = 'block';
+
+}
+
+var minesweeper = document.getElementById("hidden2");
+var destroyer = document.getElementById("hidden3");
+var battleship = document.getElementById("hidden4");
+var vert = document.getElementById("hidden5");
+
+
+
 function markHits(board, elementId, surrenderText) {
     board.attacks.forEach((attack) => {
         let className;
@@ -60,6 +85,8 @@ function registerCellListener(f) {
         }
     }
     oldListener = f;
+
+//alert ("You have placed a ship");
 }
 
 function cellClick() {
@@ -70,15 +97,41 @@ function cellClick() {
             game = data;
             redrawGrid();
             placedShips++;
+
+            console.log(shipType);
+
+            if(shipType == "MINESWEEPER")
+            {
+                minesweeper.style.display = 'none';
+
+            }
+            else if(shipType == "DESTROYER")
+            {
+
+                destroyer.style.display = 'none';
+            }
+            else if(shipType == "BATTLESHIP")
+            {
+
+                battleship.style.display = 'none';
+            }
+
+
+            alert("You have placed a ship");
             if (placedShips == 3) {
+                vert.style.display= 'none';
                 isSetup = false;
                 registerCellListener((e) => {});
+
             }
+
         });
+        //alert("You have placed a ship");
     } else {
         sendXhr("POST", "/attack", {game: game, x: row, y: col}, function(data) {
             game = data;
             redrawGrid();
+
         })
     }
 }
@@ -91,10 +144,12 @@ function sendXhr(method, url, data, handler) {
             return;
         }
         handler(JSON.parse(req.responseText));
+       // alert("You have placed a ship");
     });
     req.open(method, url);
     req.setRequestHeader("Content-Type", "application/json");
     req.send(JSON.stringify(data));
+
 }
 
 function place(size) {
@@ -120,8 +175,11 @@ function place(size) {
                 break;
             }
             cell.classList.toggle("placed");
+            //alert("You have placed a ship");
         }
+        //alert("You have placed a ship");
     }
+
 }
 
 function initGame() {
@@ -141,5 +199,9 @@ function initGame() {
     });
     sendXhr("GET", "/game", {}, function(data) {
         game = data;
+
     });
+
+
 };
+
