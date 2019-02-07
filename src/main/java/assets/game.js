@@ -87,7 +87,7 @@ function sendXhr(method, url, data, handler) {
     var req = new XMLHttpRequest();
     req.addEventListener("load", function(event) {
         if (req.status != 200) {
-            alert("Cannot complete the action");
+            alert("Two ships may not occupy one square. Please try placing in another spot.");
             return;
         }
         handler(JSON.parse(req.responseText));
