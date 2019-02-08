@@ -18,19 +18,19 @@
 
 #opponent{
     /*display:none;*/
-    border: 1px solid black;
+    border: 1px solid red;
     border-spacing: 0px;
 }
 
 #opponent tr {
     /*display:none;*/
-    border: 1px solid black;
+    border: 1px solid red;
     height: 30px;
 }
 
 #opponent td {
     /*display:none;*/
-    border: 1px solid black;
+    border: 1px solid red;
     width: 30px;
 }
 
@@ -90,21 +90,66 @@ td:hover {
 }
 
 
-
+/*
 #hidden2{
 
     display:block;
-    /*background-color: black;*/
-}
-
-#hidden3{
+  }
+*/
+/*#hidden3{
     display:block;
 }
-
+*/
 #hidden4{
     display:block;
 }
 
 #hidden5{
     display:block;
+}
+
+#instruction1
+{
+    display:block;
+}
+
+#instruction2{
+    display:none;
+}
+
+#show_opponent
+{
+    display:none;
+}
+
+
+.hidden2 {
+    display:block;
+    background:url(Minesweeper.JPG) no-repeat;
+    cursor:pointer;
+    border:none;
+    width: 300px;
+    height: 150px;
+}
+
+.hidden3 {
+    display:block;
+    background:url(battleship2.JPG) no-repeat;
+    cursor:pointer;
+    border:none;
+    width: 300px;
+    height: 100px;
+}
+
+.hidden4 {
+    display:block;
+    background:url(battleship3.JPG) no-repeat;
+    cursor:pointer;
+    border:none;
+    width: 300px;
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
 }
