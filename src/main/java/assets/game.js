@@ -130,7 +130,7 @@ function cellClick() {
                 vert.style.display= 'none';
                 instruction1.style.display= 'none';
                 start_game.style.display='block';
-                pLabel.style.margin = "290px 0px 0px 0px";
+
                 //myFunction();
                 isSetup = false;
                 registerCellListener((e) => {});
