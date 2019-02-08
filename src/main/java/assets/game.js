@@ -32,7 +32,7 @@ var destroyer = document.getElementsByClassName("hidden3")[0];
 var battleship = document.getElementsByClassName("hidden4")[0];
 var vert = document.getElementById("hidden5");
 var instruction1 = document.getElementById("instruction1");
-var instruction2 = document.getElementById("instruction2");
+var pLabel = document.getElementById("pLabel");
 
 function myFunction() {
 
@@ -105,18 +105,23 @@ function cellClick() {
 
             if(shipType == "MINESWEEPER")
             {
-                minesweeper.style.display = 'none';
+                minesweeper.style.display = 'inline';
+                minesweeper.disabled = 'true';
 
             }
             else if(shipType == "DESTROYER")
             {
 
-                destroyer.style.display = 'none';
+                destroyer.style.display = 'inline';
+                destroyer.disabled = 'true';
+
             }
             else if(shipType == "BATTLESHIP")
             {
 
-                battleship.style.display = 'none';
+                battleship.style.display = 'inline';
+                battleship.disabled = 'true';
+
             }
 
 
@@ -124,8 +129,8 @@ function cellClick() {
             if (placedShips == 3) {
                 vert.style.display= 'none';
                 instruction1.style.display= 'none';
-                instruction2.style.display = 'block';
                 start_game.style.display='block';
+                pLabel.style.margin = "290px 0px 0px 0px";
                 //myFunction();
                 isSetup = false;
                 registerCellListener((e) => {});
@@ -141,6 +146,7 @@ function cellClick() {
 
         })
     }
+
 }
 
 function sendXhr(method, url, data, handler) {
