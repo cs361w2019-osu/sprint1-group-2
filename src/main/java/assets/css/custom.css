@@ -2,36 +2,41 @@
 -------------------------------------------------- */
 
 #player{
+
+  float: left;
     border: 1px solid black;
     border-spacing: 0px;
 }
 
 #player tr {
+  /*display: inline;*/
     border: 1px solid black;
-    height: 30px;
+    height: 32px;
 }
 
 #player td {
+  /*display: inline;*/
     border: 1px solid black;
-    width: 30px;
+    width: 32px;
 }
 
 #opponent{
-    /*display:none;*/
+  float:left;
     border: 1px solid red;
     border-spacing: 0px;
+    margin-right: 20px;
 }
 
 #opponent tr {
-    /*display:none;*/
+    /*display: inline;*/
     border: 1px solid red;
-    height: 30px;
+    height: 32px;
 }
 
 #opponent td {
-    /*display:none;*/
+    /*display: inline;*/
     border: 1px solid red;
-    width: 30px;
+    width: 32px;
 }
 
 .hidden {
@@ -106,6 +111,7 @@ td:hover {
 
 #hidden5{
     display:block;
+    margin-top: 20px;
 }
 
 #instruction1
@@ -114,7 +120,7 @@ td:hover {
 }
 
 #instruction2{
-    display:none;
+  margin-left: 20px;
 }
 
 #show_opponent
@@ -122,18 +128,30 @@ td:hover {
     display:none;
 }
 
+#oLabel {
+  font-size: 20px;
+}
+
+#pLabel {
+  padding-bottom: 1px;
+  display:block;
+  font-size: 20px;
+  margin-bottom: 0;
+}
 
 .hidden2 {
-    display:block;
+    display: inline;
     background:url(Minesweeper.JPG) no-repeat;
     cursor:pointer;
     border:none;
     width: 300px;
-    height: 150px;
+    height: 120px;
+    padding-top: 0px;
+    bottom: 20px;
 }
 
 .hidden3 {
-    display:block;
+    display: inline;
     background:url(battleship2.JPG) no-repeat;
     cursor:pointer;
     border:none;
@@ -142,7 +160,7 @@ td:hover {
 }
 
 .hidden4 {
-    display:block;
+    display: inline;
     background:url(battleship3.JPG) no-repeat;
     cursor:pointer;
     border:none;
@@ -152,4 +170,13 @@ td:hover {
 
 ul{
     list-style-type: none;
+}
+
+h1 {
+  float: right;
+  font-family: impact;
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 100px;
 }
