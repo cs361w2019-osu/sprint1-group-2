@@ -1,12 +1,12 @@
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\conf\Module.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\controllers\ApplicationController.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\Board.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\Game.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\Ship.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\conf\Routes.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\AtackStatus.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\controllers\PlacementGameAction.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\Square.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\controllers\AttackGameAction.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\conf\Filters.java
-C:\Users\connorwilson\Documents\Oregon State\Computer Science\CS 361\Sprint1\sprint1-group-2\src\main\java\cs361\battleships\models\Result.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/controllers/ApplicationController.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/controllers/AttackGameAction.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/Square.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/conf/Filters.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/conf/Routes.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/controllers/PlacementGameAction.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/Result.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/Ship.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/conf/Module.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/Board.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/AtackStatus.java
+/home/kindlehl/Homework/sprint1-group-2/src/main/java/cs361/battleships/models/Game.java

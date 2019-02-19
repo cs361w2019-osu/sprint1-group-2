@@ -16,7 +16,7 @@ public class Board {
 	 */
 	public Board() {
 		ships = new ArrayList<>();
-		attacks = new ArrayList<>();
+		attacks  = new ArrayList<>();
 	}
 
 	/*

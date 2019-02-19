@@ -1,21 +1,70 @@
 /* Add additional stylesheets below
 -------------------------------------------------- */
 
-.battleGrid {
+#player{
     border: 1px solid black;
     border-spacing: 0px;
 }
 
-.battleGrid tr {
+#player tr {
     border: 1px solid black;
     height: 30px;
 }
 
-.battleGrid td {
+#player td {
     border: 1px solid black;
     width: 30px;
 }
 
+#opponent{
+    /*display:none;*/
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+#opponent tr {
+    /*display:none;*/
+    border: 1px solid black;
+    height: 30px;
+}
+
+#opponent td {
+    /*display:none;*/
+    border: 1px solid black;
+    width: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/*
+.battleGrid #opponent{
+display:none;
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+.battleGrid tr #opponent{
+    display: none;
+    border: 1px solid black;
+    height: 30px;
+}
+
+.battleGrid td #opponent{
+    display: none;
+    border: 1px solid black;
+    width: 30px;
+}
+*/
+/*
+#opponent{
+    visibility: hidden;
+}
+*/
 td:hover {
     background-color: gray;
 }
@@ -38,4 +87,24 @@ td:hover {
 
 .miss {
     background-color: blue;
+}
+
+
+
+#hidden2{
+
+    display:block;
+    /*background-color: black;*/
+}
+
+#hidden3{
+    display:block;
+}
+
+#hidden4{
+    display:block;
+}
+
+#hidden5{
+    display:block;
 }

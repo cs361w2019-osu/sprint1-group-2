@@ -4,17 +4,29 @@
 
 <h1>The Battleship game</h1>
 
-<table id="opponent" class="battleGrid">
-</table>
 
-<table id="player" class="battleGrid">
-</table>
+<div id="show" class="hidden">
+
+    <table id="opponent"></table>
+
+</div>
+<!--<table id="opponent" class="battleGrid"></table>-->
+
+<br>
+
+<table id="player"></table>
+
+<!--<table id="player" class="battleGrid"></table>-->
+
+
+
+<button id ="show_opponent">show opponent grid</button>
 
 <ul>
-    <li><button id="place_minesweeper">Place Minesweeper</button></li>
-    <li><button id="place_destroyer">Place Destroyer</button></li>
-    <li><button id="place_battleship">Place Battleship</button></li>
-    <li><input type="checkbox" id="is_vertical">Vertical</input></li>
+    <li id="hidden2"><button id="place_minesweeper">Place Minesweeper</button></li>
+    <li id="hidden3"><button id="place_destroyer">Place Destroyer</button></li>
+    <li id="hidden4"><button id="place_battleship">Place Battleship</button></li>
+    <li id="hidden5"><input type="checkbox" id="is_vertical">Vertical</input></li>
 </ul>
 
 <script type="text/javascript" src="/assets/game.js"></script>
