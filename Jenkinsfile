@@ -10,7 +10,7 @@ pipeline {
   }
   post {
     unsuccessful {
-      echo 'fuck'
+      echo 'why is this not working'
       githubNotify credentialsId: 'cs361-token', description: 'Jenkins build failed', status: 'FAILURE', targetUrl 'http://jenkins.hunterlannon.net'
     }
     success {
