@@ -15,7 +15,7 @@ pipeline {
     unsuccessful {
       githubNotify credentialsId: 'cs361-token', description: 'Jenkins build failed', status: 'FAILURE', targetUrl 'http://jenkins.hunterlannon.net'
     }
-    successful {
+    success {
       githubNotify credentialsId: 'cs361-token', description: 'Jenkins build passed', status: 'SUCCESS', targetUrl 'http://jenkins.hunterlannon.net'
     }
   }
