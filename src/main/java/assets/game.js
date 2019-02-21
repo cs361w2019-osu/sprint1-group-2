@@ -39,6 +39,7 @@ function myFunction() {
     grid.style.display = 'block';
     start_game.style.display = 'none';
     instruction2.style.display = 'block';
+    isSetup = false;
 
 }
 
@@ -132,7 +133,8 @@ function cellClick() {
                 start_game.style.display='block';
 
                 //myFunction();
-                isSetup = false;
+                //
+                //isSetup = false;
                 registerCellListener((e) => {});
 
             }
